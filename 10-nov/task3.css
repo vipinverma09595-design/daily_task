@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .flex-container {
+      display: flex;
+      flex-direction: row; /* Try changing this to column, row-reverse, or column-reverse */
+      border: 2px solid #333;
+      padding: 10px;
+      width: 80%;
+      margin: auto;
+    }
+    .flex-item {
+      background: #76c7ff;
+      padding: 20px;
+      margin: 10px;
+      text-align: center;
+      font-size: 20px;
+      border-radius: 5px;
+      flex: 1;
+    }
+  </style>
+</head>
+<body>
+
+<h2>CSS Flex Container Example</h2>
+<p>
+  The <strong>flex-direction</strong> property specifies the direction of the flex items in the container.<br>
+  Below, the flex container has <code>flex-direction: row; (default)</code>.<br>
+  Try changing the <code>flex-direction</code> property in the CSS to <code>column</code>, <code>row-reverse</code>, or <code>column-reverse</code> to see the effect!
+</p>
+
+<div class="flex-container">
+  <div class="flex-item">Item 1</div>
+  <div class="flex-item">Item 2</div>
+  <div class="flex-item">Item 3</div>
+</div>
+
+</body>
+</html>

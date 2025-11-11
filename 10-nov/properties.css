@@ -1,0 +1,109 @@
+/* Flex Container Properties */
+
+/* 1. display */
+/* Set to flex or inline-flex to create a flex container */
+.container {
+  display: flex;          /* block-level flex container */
+  /* display: inline-flex;   inline-level flex container */
+}
+
+/* 2. flex-direction */
+.flex-row {
+  flex-direction: row; /* default, left to right (main axis: horizontal) */
+}
+.flex-row-reverse {
+  flex-direction: row-reverse; /* right to left (main axis: horizontal) */
+}
+.flex-column {
+  flex-direction: column; /* top to bottom (main axis: vertical) */
+}
+.flex-column-reverse {
+  flex-direction: column-reverse; /* bottom to top (main axis: vertical) */
+}
+
+/* 3. flex-wrap */
+.no-wrap {
+  flex-wrap: nowrap;        /* default, all items in one line */
+}
+.wrap {
+  flex-wrap: wrap;          /* items wrap onto multiple lines */
+}
+.wrap-reverse {
+  flex-wrap: wrap-reverse;  /* items wrap in reverse order */
+}
+
+/* 4. flex-flow */
+/* Shorthand for flex-direction and flex-wrap */
+.flow-row-wrap {
+  flex-flow: row wrap;
+}
+.flow-column-nowrap {
+  flex-flow: column nowrap;
+}
+
+/* 5. justify-content */
+/* Align items along the main axis (horizontal if flex-direction: row) */
+.justify-start {
+  justify-content: flex-start;
+}
+.justify-end {
+  justify-content: flex-end;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.justify-around {
+  justify-content: space-around;
+}
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
+/* 6. align-items */
+/* Align items on the cross axis (vertical if flex-direction: row) */
+.align-start {
+  align-items: flex-start;
+}
+.align-end {
+  align-items: flex-end;
+}
+.align-center {
+  align-items: center;
+}
+.align-baseline {
+  align-items: baseline;
+}
+.align-stretch {
+  align-items: stretch;  /* default */
+}
+
+/* 7. align-content */
+/* Align lines (for wrapping; cross axis) */
+.align-content-start {
+  align-content: flex-start;
+}
+.align-content-end {
+  align-content: flex-end;
+}
+.align-content-center {
+  align-content: center;
+}
+.align-content-between {
+  align-content: space-between;
+}
+.align-content-around {
+  align-content: space-around;
+}
+.align-content-stretch {
+  align-content: stretch;
+}
+
+/* Example usage:
+<div class="container flex-row wrap justify-between align-center align-content-around">
+  <div>Item 1</div>
+  ...
+</div>
+*/

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Properties Showcase</title>
+  <style>
+    /* Fixed width and max-width containers */
+    .ex1 {
+      width: 700px;
+      margin: auto;
+      border: 3px solid #73AD21;
+    }
+    .ex2 {
+      max-width: 500px;
+      margin: auto;
+      border: 3px solid #73AD21;
+    }
+
+    /* Float image */
+    .float-demo img {
+      float: right;
+      margin-left: 15px;
+      width: 200px;
+      height: 200px;  
+    }
+    .float-demo {
+      border: 2px solid #ffaa4c;
+      padding: 15px;
+      margin: 30px auto;
+      max-width: 700px;
+      background: #f9f9eb;
+    }
+
+    /* Flex Container */
+    .flex-demo {
+      display: flex;
+      flex-direction: row; /* Change to column, row-reverse, or column-reverse to experiment */
+      gap: 10px;
+      border: 2px solid #4766c7;
+      background: #eaf3fd;
+      padding: 15px;
+      width: 80%;
+      margin: 30px auto 10px auto;
+    }
+    .flex-item {
+      background: #76c7ff;
+      padding: 20px;
+      text-align: center;
+      font-size: 20px;
+      border-radius: 5px;
+      flex: 1;
+      min-width: 100px;
+    }
+
+    body {
+      font-family: sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+    }
+    h2 {
+      color: #31425b;
+      margin-top: 40px;
+    }
+    p {
+      color: #34495e;
+      max-width: 900px;
+      margin: 15px auto;
+    }
+    .section {
+      margin-bottom: 50px;
+    }
+    .properties-list {
+      background: #eefbac;
+      border: 1px dashed #b6d464;
+      padding: 12px;
+      margin: 15px auto;
+      width: 80%;
+    }
+    code {
+      background: #e2e2e2;
+      padding: 2px 5px;
+      border-radius: 3px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Section: Max-width -->
+  <div class="section">
+    <h2>CSS Max-width vs Fixed Width</h2>
+    <div class="ex1">This div element has <strong>width: 700px;</strong></div>
+    <br>
+    <div class="ex2">This div element has <strong>max-width: 500px;</strong></div>
+    <p>
+      <strong>Tip:</strong> Drag the browser window to smaller than 500px wide, to see the difference between the two divs!
+    </p>
+  </div>
+  
+  <!-- Section: Float example -->
+  <div class="section">
+    <h2>CSS <code>float: right</code> Example</h2>
+    <div class="float-demo">
+      <img src="pineapple.jpg" alt="Pineapple">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.
+    </div>
+    <p>
+      In this example, the image floats to the right inside the container, and the text wraps around it.
+    </p>
+  </div>
+
+  <!-- Section: Flexbox demo and explanation -->
+  <div class="section">
+    <h2>CSS Flex Container Properties</h2>
+    <div class="properties-list">
+      <ul>
+        <li><strong>display</strong> - Must be set to <code>flex</code> or <code>inline-flex</code></li>
+        <li><strong>flex-direction</strong> - Sets the display-direction of flex items</li>
+        <li><strong>flex-wrap</strong> - Specifies whether the flex items should wrap or not</li>
+        <li><strong>flex-flow</strong> - Shorthand property for flex-direction and flex-wrap</li>
+        <li><strong>justify-content</strong> - Aligns the flex items horizontally (main-axis)</li>
+        <li><strong>align-items</strong> - Aligns the flex items vertically (cross-axis)</li>
+        <li><strong>align-content</strong> - Aligns the flex lines when flex items wrap</li>
+      </ul>
+    </div>
+    <h3>CSS <code>flex-direction</code> Property</h3>
+    <div class="properties-list">
+      <strong>Possible values:</strong>
+      <ul>
+        <li><code>row</code> (default)</li>
+        <li><code>column</code></li>
+        <li><code>row-reverse</code></li>
+        <li><code>column-reverse</code></li>
+      </ul>
+    </div>
+    <p>
+      The <strong>flex-direction</strong> property specifies the direction in which flex items are placed in the container. Try changing its value in the CSS above to see the change!
+    </p>
+    <div class="flex-demo">
+      <div class="flex-item">Item 1</div>
+      <div class="flex-item">Item 2</div>
+      <div class="flex-item">Item 3</div>
+    </div>
+  </div>
+</body>
+</html>
